@@ -16,31 +16,31 @@ Parameters:  # Parameters section for customizable values
 
   HostedZone:  # Parameter for the hosted zone name in AWS Route 53
     Type: String
-    Default: aviad.click.
+    Default: labcomm.shop
     Description: Name of the hostedZone in AWS Route 53
     NoEcho: true
 
   RecordName:  # Parameter for the DNS record name
     Type: String
-    Default: comm.aviad.click.
+    Default: labcomm.shop
     Description: Name of the Route 53 record
     NoEcho: true
 
   FrontEndImageRepo:  # Parameter for the repository of the FrontEnd image
     Type: String
-    Default: 767397848009.dkr.ecr.eu-north-1.amazonaws.com/comm_frontend
+    Default: 767397848009.dkr.ecr.il-central-1.amazonaws.com/comm_frontend
     Description: Repository of the FrontEnd image
     NoEcho: true
 
   BackEndImageRepo:  # Parameter for the repository of the BackEnd image
     Type: String
-    Default: 767397848009.dkr.ecr.eu-north-1.amazonaws.com/comm_backend
+    Default: 767397848009.dkr.ecr.il-central-1.amazonaws.com/comm_backend
     Description: Repository of the BackEnd image
     NoEcho: true
 
   TLScertificationARN:  # Parameter for the ARN of the ACM certificate
     Type: String
-    Default: arn:aws:acm:eu-north-1:767397848009:certificate/885c7390-8d6c-4c0f-82d6-ee044b36a136
+    Default: arn:aws:acm:il-central-1:767397848009:certificate/885c7390-8d6c-4c0f-82d6-ee044b36a136
     Description: ARN of the Certificate from ACM
     NoEcho: true
 
